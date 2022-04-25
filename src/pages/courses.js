@@ -103,6 +103,10 @@ const Section = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 `;
 const Cards = styled.div`
   display: flex;
@@ -128,8 +132,9 @@ const Cards = styled.div`
       display: none;
     }
   }
-  @media (max-width:768px) {
-    padding:1vw;
+  @media (max-width: 768px) {
+    padding-left:0px;
+    padding-right:0px;
   }
 `;
 const Content = styled.div`
@@ -141,6 +146,9 @@ const Content = styled.div`
   margin:0 5vh;
   span {
     text-decoration: line-through;
+  }
+  @media (max-width:768px) {
+    width:100%;
   }
 `
 const Cardstwo = styled(Cards)`

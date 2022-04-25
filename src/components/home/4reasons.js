@@ -103,6 +103,7 @@ const Content3 = styled.div`
   margin-top: 0px;
   @media (max-width:768px) {
     flex-direction: column;
+    width:90%;
   }
 `;
 const Cards = styled.div`

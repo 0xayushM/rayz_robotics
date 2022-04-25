@@ -162,6 +162,8 @@ const Card = styled.div`
   border-radius: 10px;
   justify-content: space-around;
   transition: 0.5s;
-  margin: 5vh;
-  
+  margin: 10vh;
+  @media (max-width: 768px) {
+    margin:0px;
+}
 `;
