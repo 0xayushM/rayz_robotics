@@ -47,6 +47,9 @@ export default Reasons;
 const Head = styled.div`
   font-size: 1.5vw;
   font-weight: bold;
+  @media (max-width:768px) {
+    font-size: 4vw;
+  }
 `;
 const Heading3 = styled.div`
   justify-content: center;
@@ -60,6 +63,9 @@ const Heading3 = styled.div`
   h1 {
     padding: 0;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 6vw;
+    }
   }
   font-size: 1.3vw;
   a {
@@ -67,6 +73,9 @@ const Heading3 = styled.div`
   }
   p {
     font-size: 1.5vw;
+    @media (max-width: 768px) {
+      font-size: 3vw;
+    }
   }
 `;
 
@@ -92,6 +101,9 @@ const Content3 = styled.div`
   }
   margin-bottom: 3vh;
   margin-top: 0px;
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
 `;
 const Cards = styled.div`
   padding: 3vw;
@@ -113,6 +125,16 @@ const Cards = styled.div`
   }
   display: flex;
   flex-direction: column;
+  p {
+    font-size:1.5vw;
+  }
+  @media (max-width:768px) {
+    width:100%;
+    margin:10px 0;
+    p {
+      font-size:3vw;
+    }
+  }
 `;
 
 const Cardstwo = styled(Cards)`

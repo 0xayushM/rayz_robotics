@@ -143,6 +143,13 @@ const Section = styled.div`
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0/73%) 0px 16px 10px -10px;
     border-radius: 10px;
+    @media (max-width:768px) {
+      display:none;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding:2vh 3vw;
   }
 `;
 const Card = styled.div`
@@ -156,4 +163,5 @@ const Card = styled.div`
   justify-content: space-around;
   transition: 0.5s;
   margin: 5vh;
+  
 `;

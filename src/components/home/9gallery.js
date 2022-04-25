@@ -30,6 +30,36 @@ const Carousel0 = (props) => {
             <img src="/images/gallery1.png" alt="" />
           </a>
         </Wrap>
+        <Wrap>
+          <a href="#">
+            <img src="/images/gallery4.jpeg" alt="" />
+          </a>
+        </Wrap>
+        <Wrap>
+          <a href="#">
+            <img src="/images/gallery5.jpeg" alt="" />
+          </a>
+        </Wrap>
+        <Wrap>
+          <a href="#">
+            <img src="/images/gallery6.jpeg" alt="" />
+          </a>
+        </Wrap>
+        <Wrap>
+          <a href="#">
+            <img src="/images/gallery7.jpeg" alt="" />
+          </a>
+        </Wrap>
+        <Wrap>
+          <a href="#">
+            <img src="/images/gallery8.jpeg" alt="" />
+          </a>
+        </Wrap>
+        <Wrap>
+          <a href="#">
+            <img src="/images/gallery9.jpeg" alt="" />
+          </a>
+        </Wrap>
       </Carousel>
     </Container>
   );
@@ -71,6 +101,8 @@ const Carousel = styled(Slider)`
 `;
 const Wrap = styled.div`
   border-radius: 6px;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   position: relative;
   a {
@@ -78,7 +110,7 @@ const Wrap = styled.div`
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     cursor: pointer;
-    display: block;
+    display: flex;
     position: relative;
     padding: 4px;
     margin:0 20px;

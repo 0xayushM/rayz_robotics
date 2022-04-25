@@ -44,14 +44,12 @@ const Testimony = (props) => {
               <Heading2>
                 <h1>Gaurav Kumar </h1>
                 <h3>Research Scholar, University of Valencia, Spain</h3>
-                <p id='gaurav'>
+                <p>
                   We are living in 21st century and now robotics is not some
                   future technology. Starting from small things like needle to
                   something huge like aeroplane, everything is now being
                   manufactured in industries on production line. Machines have
-                  replaced humans almost in every sector. So it becomes
-                  important that students are taught about robotics and
-                  automation starting from school days. They should learn the
+                  replaced humans almost in every sector. They should learn the
                   codings and physics behind the robotics, which will not only
                   help them to grab ample amount of opportunity in this field
                   but also help them develop their logical ability and teamwork
@@ -153,14 +151,24 @@ const Heading2 = styled.div`
   h1 {
     padding: 0;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 5vw;
+    }
   }
   font-size: 1.3vw;
   a {
     color: #8338ec;
   }
+  h3 {
+    @media (max-width:768px) {
+      font-size:3.5vw;
+    }
+  }
   p {
     font-size: 1.5vw;
-    text-align: justify;
+    @media (max-width: 768px) {
+      font-size: 3vw;
+    }
   }
 `;
 
@@ -191,8 +199,8 @@ const Content2 = styled.div`
       rgb(0 0 0/73%) 0px 16px 10px -10px;
     border-radius: 10px;
   }
-  #gaurav {
-    font-size: large;
+  @media (max-width:768px) {
+    flex-direction: column;
   }
 `;
 const Wrap = styled.div`

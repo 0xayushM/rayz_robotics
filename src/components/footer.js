@@ -29,19 +29,31 @@ const Footer = (props) => {
         </Connect>
         <Social>
           <h2>Follow Us</h2>
-          <a href={"https://www.facebook.com/"} target="_blank">
+          <a
+            href={"https://www.facebook.com/"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <FacebookIcon />
           </a>
-          <a href={"https://www.instagram.com/"} target="_blank">
+          <a
+            href={"https://www.instagram.com/"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <InstagramIcon />
           </a>
-          <a href={"https://www.twitter.com/"} target="_blank">
+          <a href={"https://www.twitter.com/"} target="_blank" rel="noreferrer">
             <TwitterIcon />
           </a>
-          <a href={"https://www.youtube.com/"} target="_blank">
+          <a href={"https://www.youtube.com/"} target="_blank" rel="noreferrer">
             <YouTubeIcon />
           </a>
-          <a href={"https://www.linkedin.com/"} target="_blank">
+          <a
+            href={"https://www.linkedin.com/"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedInIcon />
           </a>
           <h4>© 2021 RayZ ROBOTIC.</h4>
@@ -58,23 +70,32 @@ const Container = styled.footer`
   flex-direction: row;
   padding: 5vh 5vw;
   margin-top:9vh;
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
 `;
 
 const About = styled.div`
     max-width:30vw;
     color:white;
     padding:0 5vw 0 2.5vw;
-`
-const Connect = styled.div`
-    max-width:30vw;
-    color:white;
-    padding: 0 2.5vw 0 2.5vw;
-    font-size: 1vw;
-    a,span {
-        font-weight: lighter;
-        color:white;
+    @media (max-width:768px) {
+      max-width:100%;
     }
 `
+const Connect = styled.div`
+  max-width: 30vw;
+  color: white;
+  padding: 0 2.5vw 0 2.5vw;
+  a,
+  span {
+    font-weight: lighter;
+    color: white;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
 
 const Social = styled.div`
     color:white;
@@ -83,4 +104,5 @@ const Social = styled.div`
         color:white;
         padding:1vw;
     }
+    
 `

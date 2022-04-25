@@ -9,7 +9,6 @@ const RayZ = (props) => {
             <Head>
               <h1>RayZ ROBOTICS</h1>
             </Head>
-            <span>Tagline</span>
           </Heading>
           <img src="/images/bgimage.webp" alt="" />
         </Content1>
@@ -34,9 +33,9 @@ const Heading = styled.div`
     padding: 0;
     margin: 0;
     font-family: "Acme", sans-serif;
-  }
-  span {
-    font-size: 2vw;
+    @media (max-width:768px) {
+      font-size: 8vw;
+    }
   }
 `;
 const Section1 = styled.div`
@@ -57,5 +56,8 @@ const Content1 = styled.div`
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0/73%) 0px 16px 10px -10px;
     border-radius: 10px;
+    @media (max-width:768px) {
+      display:none;
+    }
   }
 `;

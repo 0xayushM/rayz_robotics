@@ -79,6 +79,9 @@ const StudentStories = styled.div`
 const Head = styled.div`
   font-size: 1.5vw;
   font-weight: bold;
+  @media (max-width:768px) {
+    font-size: 3vw;
+  }
 `;
 const Heading3 = styled.div`
   justify-content: center;
@@ -92,6 +95,9 @@ const Heading3 = styled.div`
   h1 {
     padding: 0;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 5vw;
+    }
   }
   font-size: 1.3vw;
   a {
@@ -99,6 +105,9 @@ const Heading3 = styled.div`
   }
   p {
     font-size: 1.5vw;
+    @media (max-width: 768px) {
+      font-size: 3vw;
+    }
   }
 `;
 const Part = styled.div`
@@ -106,9 +115,11 @@ const Part = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  
   p {
     color: white;
+  }
+  @media (max-width:768px) {
+    flex-direction: column;
   }
 `;
 
@@ -121,6 +132,9 @@ const Content3 = styled.div`
   border-radius: 10px;
   margin-bottom: 3vh;
   margin-top: 0px;
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
 `;
 
 const CardsStud = styled.div`
@@ -145,10 +159,17 @@ const CardsStud = styled.div`
     border: 10px solid #ff006e;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0/73%) 0px 16px 10px -10px;
+      @media (max-width:768px) {
+        width: 30vw;
+      }
   }
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
   &:hover {
     transform: scale(1.05);
+  }
+  @media (max-width:768px) {
+    width:100%;
+    margin-left:0;
   }
 `;
 

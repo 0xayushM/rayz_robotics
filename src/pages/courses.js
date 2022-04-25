@@ -86,6 +86,9 @@ const Container = styled.main`
     opacity: 1;
     z-index: -1;
   }
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const Head = styled.div`
@@ -121,6 +124,12 @@ const Cards = styled.div`
     width: 50%;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0/73%) 0px 16px 10px -10px;
+    @media (max-width:768px) {
+      display: none;
+    }
+  }
+  @media (max-width:768px) {
+    padding:1vw;
   }
 `;
 const Content = styled.div`

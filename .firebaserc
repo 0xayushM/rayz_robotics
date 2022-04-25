@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "rayz-robotics"
-  }
+    "default": "rayz-14795",
+    "staging": "rayz-14795"
+  },
+  "targets": {}
 }

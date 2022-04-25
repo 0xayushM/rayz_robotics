@@ -51,6 +51,9 @@ const ContentWhy = styled.div`
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0/73%) 0px 16px 10px -10px;
+      @media (max-width:768px) {
+        display: none;
+      }
   }
 `;
 const Heading2 = styled.div`
@@ -60,6 +63,9 @@ const Heading2 = styled.div`
   h1 {
     padding: 0;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size:5vw;
+    }
   }
   font-size: 1.3vw;
   a {
@@ -67,5 +73,8 @@ const Heading2 = styled.div`
   }
   p {
     font-size: 1.5vw;
+    @media (max-width: 768px) {
+      font-size: 3vw;
+    }
   }
 `;
