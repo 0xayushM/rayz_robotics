@@ -9,51 +9,51 @@ const Join = (props) => {
         <Section>
           <Form>
               <label>
-                First Name:
-                <input type="text" name="name" />
+                Name:
               </label>
-              </Form>
+                <input type="text" name="name" />
+          </Form>
           <Form>
               <label>
-                Last Name:
-                <input type="text" name="name" />
+                D.O.B.:
               </label>
-            </Form>
-          <Form>
-              <label>
-                Date of Birth:
                 <input type="date" name="date_of_birth" />
-              </label>
             </Form>
           <Form>
               <label>
                 Class:
-                <input type="text" name="name" />
               </label>
+                <input type="text" name="name" />
             </Form>
           <Form>
               <label>
-                Contact No:
-                <input type="text" name="name" />
+                Contact:
               </label>
+                <input type="text" name="name" />
               </Form>
           <Form>
               <label>
-                Email Address:
-                <input type="text" name="name" />
+                Email:
               </label>
+                <input type="text" name="name" />
+            </Form>
+          <Form>
+              <label>
+                Course:
+              </label>
+                <input type="text" name="name" />
             </Form>
           <Form>
               <label>
                 Place:
-                <input type="text" name="name" />
               </label>
+              <input type="text" name="name" />
               </Form>
           <Form>
               <label>
                 School:
-                <input type="text" name="name" />
               </label>
+                <input type="text" name="name" />
           </Form>
           <Button>
             <form>
@@ -72,15 +72,23 @@ const Head = styled.div`
 `;
 const Section = styled.div`
   background-color: rgb(0, 0, 0, 0.6);
-  padding:0px 20%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 `;
 
 const Form = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   color: white;
   border: none;
-  padding: 5vh 5vw;
-  width:40vw;
+  padding: 5vh 2vw;
+  width:70vw;
   label {
     margin: 2vh;
   }
@@ -91,8 +99,13 @@ const Form = styled.div`
     padding: 1vh;
     margin: 0 1vh;
     color: white;
+    width: 40vw;
     border: none;
     border-bottom: 2px solid white;
+    @media (max-width:768px) {
+      width: 70vw;
+      padding:10px;
+    }
   }
 `;
 const Button = styled.div`
@@ -137,6 +150,7 @@ const Container = styled.main`
     opacity: 1;
     z-index: -1;
   }
+  
 `;
 
 export default Join;

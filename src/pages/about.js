@@ -122,6 +122,9 @@ const Container = styled.main`
     opacity: 1;
     z-index: -1;
   }
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const Head = styled.div`

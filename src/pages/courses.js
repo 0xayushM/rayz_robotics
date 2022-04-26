@@ -97,11 +97,13 @@ const Head = styled.div`
   color: white;
 `;
 const Section = styled.div`
-  margin: -10vh 10vh 5vw 5vw;
+  margin: -10vh 5vw 10vh 5vw;
   padding: 5vh;
   color: white;
   border-radius: 10px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   @media (max-width: 768px) {
     padding-left: 0px;
@@ -149,6 +151,7 @@ const Content = styled.div`
   }
   @media (max-width:768px) {
     width:100%;
+    align-items: center;
   }
 `
 const Cardstwo = styled(Cards)`

@@ -4,7 +4,7 @@ const Originals = (props) => {
   return (
     <Container>
       <Head>
-        <h1>PROJECTS</h1>
+        <h1>STUDENT PROJECTS</h1>
       </Head>
       <Content>
         <Card>
@@ -127,6 +127,7 @@ const Originals = (props) => {
             <h3>Soccer Robot</h3>
           </Name>
         </Card4>
+        <Head2 ><h3>More...</h3></Head2>
       </Content>
     </Container>
   );
@@ -164,6 +165,12 @@ const Head = styled.div`
   margin: 1vh;
   color: white;
 `;
+const Head2 = styled(Head)`
+  padding:0;
+  margin:0;
+  display: flex;
+  justify-content: end;
+`
 const Content = styled.div`
   display: grid;
   grid-gap: 30px;

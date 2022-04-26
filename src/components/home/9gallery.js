@@ -32,32 +32,32 @@ const Carousel0 = (props) => {
         </Wrap>
         <Wrap>
           <a href="#">
-            <img src="/images/gallery4.jpeg" alt="" />
+            <img src="/images/gallery4.jpg" alt="" />
           </a>
         </Wrap>
         <Wrap>
           <a href="#">
-            <img src="/images/gallery5.jpeg" alt="" />
+            <img src="/images/gallery5.jpg" alt="" />
           </a>
         </Wrap>
         <Wrap>
           <a href="#">
-            <img src="/images/gallery6.jpeg" alt="" />
+            <img src="/images/gallery6.jpg" alt="" />
           </a>
         </Wrap>
         <Wrap>
           <a href="#">
-            <img src="/images/gallery7.jpeg" alt="" />
+            <img src="/images/gallery7.jpg" alt="" />
           </a>
         </Wrap>
         <Wrap>
           <a href="#">
-            <img src="/images/gallery8.jpeg" alt="" />
+            <img src="/images/gallery8.jpg" alt="" />
           </a>
         </Wrap>
         <Wrap>
           <a href="#">
-            <img src="/images/gallery9.jpeg" alt="" />
+            <img src="/images/gallery9.jpg" alt="" />
           </a>
         </Wrap>
       </Carousel>
@@ -116,7 +116,10 @@ const Wrap = styled.div`
     margin:0 20px;
     img {
       width: 100%;
-      height: 100%;
+      height: 50vh;
+      @media (max-width:768px) {
+        height: 25vh;
+      }
     }
 
     &:hover {

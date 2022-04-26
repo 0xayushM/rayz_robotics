@@ -21,7 +21,7 @@ const Testimony = (props) => {
         <Wrap>
           <Section2>
             <Content2>
-              <img src="/testimonies/Ashiq.jpg" alt="" />
+              <img src="/testimonies/Ashiq.jpg" alt="" class="Ashiq"/>
               <Heading2>
                 <h1>M. Ashiq </h1>
                 <h3>Continental Automotive</h3>
@@ -40,7 +40,7 @@ const Testimony = (props) => {
         <Wrap>
           <Section2>
             <Content2>
-              <img src="/testimonies/Gaurav.jpg" alt="" />
+              <img src="/testimonies/Gaurav.jpg" alt="" class='gaurav'/>
               <Heading2>
                 <h1>Gaurav Kumar </h1>
                 <h3>Research Scholar, University of Valencia, Spain</h3>
@@ -62,7 +62,7 @@ const Testimony = (props) => {
         <Wrap>
           <Section2>
             <Content2>
-              <img src="/testimonies/Sawan.jpg" alt="" />
+              <img src="/testimonies/Sawan.jpg" alt="" class='sawan'/>
               <Heading2>
                 <h1>Sawan Ambedkar </h1>
                 <h3>Mercedes Benz</h3>
@@ -81,7 +81,7 @@ const Testimony = (props) => {
         <Wrap>
           <Section2>
             <Content2>
-              <img src="/testimonies/Shashank.jpg" alt="" />
+              <img src="/testimonies/Shashank.jpg" alt="" class='shashank'/>
               <Heading2>
                 <h1>Shashank Gupta</h1>
                 <h3>Research Scholar, IIT Delhi</h3>
@@ -198,6 +198,12 @@ const Content2 = styled.div`
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0/73%) 0px 16px 10px -10px;
     border-radius: 10px;
+  }
+  .Ashiq {
+    width:50vw;
+  }
+  .sawan {
+    width:35vw;
   }
   @media (max-width:768px) {
     flex-direction: column;
